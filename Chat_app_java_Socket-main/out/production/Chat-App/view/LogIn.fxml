@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="logInPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="407.0" style="-fx-background-color: #90be6d;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LogIn">
+   <children>
+      <AnchorPane prefHeight="53.0" prefWidth="407.0" style="-fx-background-color: #55a630;">
+         <children>
+            <Label layoutX="135.0" layoutY="4.0" prefHeight="46.0" prefWidth="169.0" text="Live Chat" textFill="WHITE">
+               <font>
+                  <Font name="Bookshelf Symbol 7" size="36.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="34.0" fitWidth="41.0" layoutX="346.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-chat.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <TextField fx:id="userNametxt" layoutX="39.0" layoutY="318.0" prefHeight="42.0" prefWidth="330.0" promptText=" User Name" style="-fx-max-height: 100; -fx-background-color: white; -fx-background-radius: 50;">
+         <font>
+            <Font name="Bodoni MT Condensed Bold" size="24.0" />
+         </font></TextField>
+      <Button fx:id="btnLogin" layoutX="130.0" layoutY="426.0" mnemonicParsing="false" onAction="#loginOnAction" prefHeight="42.0" prefWidth="147.0" style="-fx-background-radius: 50; -fx-background-color: #55a630;" text="Login" textFill="#c6c6c6">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="41.0" fitWidth="53.0" layoutX="184.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/secure.png" />
+         </image>
+      </ImageView>
+      <Line endX="306.0" layoutX="100.0" layoutY="536.0" startX="-100.0" />
+   </children>
+</AnchorPane>
